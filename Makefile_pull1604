@@ -1,0 +1,11 @@
+NAME	:= 	ubuntu
+
+#ifndef VPSNAME
+#$(error VPSNAME is not set)
+#endif
+
+pull1604:
+	docker pull ubuntu:16.04	
+
+run1604:
+	docker run -it ubuntu:16.04 /bin/bash

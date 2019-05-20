@@ -1,0 +1,9 @@
+NAME	:= 	run1604
+
+ifndef CNAME
+$(error CNAME is not set)
+endif
+
+
+run1604:
+	docker run --name ${CNAME} -it ubuntu:16.04 /bin/bash 
